@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <nav class="navbar">
+        <h1>My Shop</h1>
+        <ul>
+            <li><a href="#product-list">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="#cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart (<span id="cart-count">0</span>)
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <h2>Welcome to My Shop!</h2>
+        <h3>Your one-stop shop for amazing products.</h3>
+    </header>
+
+    <div class="container">
+        <div id="about">
+            <h2>About Us</h2>
+            <p>Welcome to My Shop, where we believe in providing high-quality products at competitive prices. Our mission is to ensure customer satisfaction by offering a wide variety of items that cater to your needs.</p>
+            
+            <div class="about-mission">
+                <h3>Our Mission</h3>
+                <p>To deliver excellent products and services that enhance the shopping experience while fostering a community of satisfied customers.</p>
+            </div>
+        
+            <div class="about-values">
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Quality: We prioritize quality in every product we offer.</li>
+                    <li>Customer Focus: Your satisfaction is our top priority.</li>
+                    <li>Integrity: We conduct our business with honesty and transparency.</li>
+                    <li>Innovation: We continuously seek to improve and innovate.</li>
+                </ul>
+            </div>
+            
+            <div class="about-team">
+                <h3>Meet Our Team</h3>
+                <p>Our team consists of dedicated professionals who are passionate about what they do. We work tirelessly to ensure you have the best shopping experience.</p>
+            </div>
+        </div>
+        
+
+        <div id="product-list">
+            <h2>Products</h2>
+            <div class="product" data-id="1" data-name="Chaussures" data-price="59.99">
+                <img src="imgChaussures.jpg" alt="Chaussures">
+                <h3>Chaussures</h3>
+                <p>Price: 59.99 €</p>
+                <div class="product-icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus add-to-cart" title="Add to Cart"></i>
+                    <i class="fa-solid fa-trash" title="Remove"></i>
+                </div>
+            </div>
+            <div class="product" data-id="2" data-name="T-shirt" data-price="19.99">
+                <img src="img.webp" alt="T-shirt">
+                <h3>T-shirt</h3>
+                <p>Price: 19.99 €</p>
+                <div class="product-icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus add-to-cart" title="Add to Cart"></i>
+                    <i class="fa-solid fa-trash" title="Remove"></i>
+                </div>
+            </div>
+            <div class="product" data-id="3" data-name="Pantalon" data-price="39.99">
+                <img src="R (1).jpeg" alt="Pantalon">
+                <h3>Pantalon</h3>
+                <p>Price: 39.99 €</p>
+                <div class="product-icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus add-to-cart" title="Add to Cart"></i>
+                    <i class="fa-solid fa-trash" title="Remove"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: 0.00 €</p>
+        </div>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+       
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>My Shop</h3>
+                <p>Your one-stop shop for amazing products.</p>
+                <p>&copy; 2024 My Shop. All rights reserved.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:contact@myshop.com">contact@myshop.com</a></p>
+                <p>Phone: <a href="tel:+21650805618">+216 50805618</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" target="_blank">Facebook <i class="fa-brands fa-facebook"></i></a>
+                <a href="#" target="_blank">Twitter <i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#product-list">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="shop.js"></script>
+</body>
+</html>
